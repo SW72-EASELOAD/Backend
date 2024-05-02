@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "vslsRemoteLaunch",
+            "name": "CargaSinEstres.API",
+            "request": "attach",
+            "projectID": "b2052554-1af3-4f6d-81c0-98013b14bee6"
+        }
+    ]
+}
