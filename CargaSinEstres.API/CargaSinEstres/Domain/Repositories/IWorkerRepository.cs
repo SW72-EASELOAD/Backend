@@ -6,7 +6,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 /// <summary>
 /// Interface defining the allowed operations in the worker repository.
 /// </summary>
-///<remarks> Group 1: Carga sin estres </remarks>
+///<remarks> Group 3: Carga sin estres </remarks>
 public interface IWorkerRepository
 {
     /// <summary>

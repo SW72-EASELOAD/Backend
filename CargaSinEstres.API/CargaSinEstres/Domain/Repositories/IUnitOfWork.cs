@@ -3,7 +3,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 /// <summary>
 /// Interface for the Unit of Work pattern, providing a method to complete transactions.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public interface IUnitOfWork
 {
     /// <summary>

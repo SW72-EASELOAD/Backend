@@ -2,7 +2,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
 /// <summary>
 /// Represents a comment entity with properties such as identifier, comment text, and a foreign key relationship with a worker.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class Comment
 {
     /// <summary>

@@ -6,7 +6,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 /// <summary>
 /// Represents an interface for a repository for managing review data.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public interface IReviewRepository {
 
     /// <summary>

@@ -12,7 +12,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Controllers
     /// <summary>
     /// Controlador para manejar las operaciones relacionadas con los trabajadores.
     /// </summary>
-    /// <remarks> Grupo 1: Carga sin estres </remarks>
+    /// <remarks> Grupo 3: Carga sin estres </remarks>
     [ApiController]
     [Route("/api/v1/[controller]")]
     public class WorkersController : ControllerBase

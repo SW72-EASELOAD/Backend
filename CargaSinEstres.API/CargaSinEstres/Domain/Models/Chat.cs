@@ -2,7 +2,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
 /// <summary>
 /// Represents a chat message entity containing information such as user, message content, and timestamp.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class Chat{
     /// <summary>
     /// Gets or sets the unique identifier for the chat message.

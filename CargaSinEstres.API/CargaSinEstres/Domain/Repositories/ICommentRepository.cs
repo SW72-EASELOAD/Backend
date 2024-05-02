@@ -4,7 +4,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 /// <summary>
 /// Represents a repository for managing comment entities.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public interface ICommentRepository 
 {
     /// <summary>
