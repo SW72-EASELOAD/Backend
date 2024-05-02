@@ -49,6 +49,15 @@ public class MembershipService : IMembershipService
     {
         return await _membershipRepository.ListAsync();
     }
-    
+
+    public Task<MembershipResponse> DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<MembershipResponse> UpdateAsync(int id, Membership membership)
+    {
+        throw new NotImplementedException();
+    }
 }
 

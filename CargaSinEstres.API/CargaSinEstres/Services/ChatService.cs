@@ -41,6 +41,11 @@ public class ChatService: IChatService
         return await _chatRepository.GetByIdAsync(id);
     }
 
+    public Task<IEnumerable<Chat>> GetChatsByUserNameAsync(string userName)
+    {
+        throw new NotImplementedException();
+    }
+
     /// <summary>
     /// Creates a new chat and returns a response.
     /// </summary>

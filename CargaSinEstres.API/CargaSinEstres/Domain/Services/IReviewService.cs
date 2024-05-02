@@ -28,4 +28,19 @@ public interface IReviewService{
     /// <param name="review">The review entity to be saved.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains a response with the saved review entity.</returns>
     Task<ReviewResponse> SaveAsync(Review review);
+    
+    /// <summary>
+    /// Deletes a review entity asynchronously by its unique identifier.
+    /// </summary>
+    /// <param name="id">The unique identifier of the review entity.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a response with the deleted review entity.</returns>
+    Task<ReviewResponse> DeleteAsync(int id);
+    
+    /// <summary>
+    /// Updates an existing review entity asynchronously.
+    /// </summary>
+    /// <param name="id">The unique identifier of the review entity to be updated.</param>
+    /// <param name="review">The updated review entity.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a response with the updated review entity.</returns>
+    Task<ReviewResponse> UpdateAsync(int id, Review review);
 }

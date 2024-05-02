@@ -9826,23 +9826,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\LEONARDO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Damaris (ZBook)\\UPC\\6 CICLO\\Aplicaciones Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres.API.Test\\CargaSinEstres.API.Test.csproj",
+      "projectUniqueName": "C:\\Users\\LEONARDO\\Documents\\GitHub\\Backend\\CargaSinEstres.API.Test\\CargaSinEstres.API.Test.csproj",
       "projectName": "CargaSinEstres.API.Test",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\Damaris (ZBook)\\UPC\\6 CICLO\\Aplicaciones Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres.API.Test\\CargaSinEstres.API.Test.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\Damaris (ZBook)\\UPC\\6 CICLO\\Aplicaciones Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres.API.Test\\obj\\",
+      "projectPath": "C:\\Users\\LEONARDO\\Documents\\GitHub\\Backend\\CargaSinEstres.API.Test\\CargaSinEstres.API.Test.csproj",
+      "packagesPath": "C:\\Users\\LEONARDO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LEONARDO\\Documents\\GitHub\\Backend\\CargaSinEstres.API.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LEONARDO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9851,15 +9851,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Downloads\\Damaris (ZBook)\\UPC\\6 CICLO\\Aplicaciones Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Downloads\\Damaris (ZBook)\\UPC\\6 CICLO\\Aplicaciones Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj"
+            "C:\\Users\\LEONARDO\\Documents\\GitHub\\Backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj": {
+              "projectPath": "C:\\Users\\LEONARDO\\Documents\\GitHub\\Backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj"
             }
           }
         }
@@ -9917,7 +9916,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

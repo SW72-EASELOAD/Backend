@@ -23,5 +23,19 @@ public interface ICommentService {
     /// <param name="workerId">The identifier of the worker.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains a list of comment entities.</returns>
     Task<IEnumerable<Comment>> ListByWorkerIdAsync(int workerId);
+    
+    /// <summary>
+    /// Deletes a comment entity asynchronously by its unique identifier.
+    /// </summary>
+    /// <param name="id">The unique identifier of the comment entity.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a response with the deleted comment entity.</returns>
+    Task<CommentResponse> DeleteAsync(int id);
 
+    /// <summary>
+    /// Updates an existing comment entity asynchronously.
+    /// </summary>
+    /// <param name="id">The unique identifier of the comment entity to be updated.</param>
+    /// <param name="comment">The updated comment entity.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a response with the updated comment entity.</returns>
+    Task<CommentResponse> UpdateAsync(int id, Comment comment);
 }

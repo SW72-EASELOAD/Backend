@@ -23,6 +23,13 @@ public interface IChatService
     Task<Chat> GetChatAsync(int id);
 
     /// <summary>
+    /// Gets chat entities asynchronously by the user's name.
+    /// </summary>
+    /// <param name="userName">The unique username of the chat entity.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a list of chat entities associated with the username.</returns>
+    Task<IEnumerable<Chat>> GetChatsByUserNameAsync(string userName);
+
+    /// <summary>
     /// Creates a new chat entity asynchronously.
     /// </summary>
     /// <param name="chat">The chat entity to be created.</param>

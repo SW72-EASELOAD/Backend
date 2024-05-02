@@ -70,5 +70,15 @@ public class ReviewService : IReviewService
             return new ReviewResponse($"An error occurred while saving the review: {e.Message}");
         }
     }
+
+    public Task<ReviewResponse> DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<ReviewResponse> UpdateAsync(int id, Review review)
+    {
+        throw new NotImplementedException();
+    }
 }
 
