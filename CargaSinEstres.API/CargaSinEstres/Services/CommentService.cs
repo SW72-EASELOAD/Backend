@@ -83,5 +83,15 @@ public class CommentService : ICommentService
     {
         return await _commentRepository.ListByWorkerIdAsync(workerId);
     }
+
+    public Task<CommentResponse> DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<CommentResponse> UpdateAsync(int id, Comment comment)
+    {
+        throw new NotImplementedException();
+    }
 }
 
