@@ -91,7 +91,8 @@ namespace CargaSinEstres.API.CargaSinEstres.Controllers
             NewWorker.CompanyId = companyId;
 
             var result = await _workerService.SaveAsync(NewWorker); 
-        
+
+            // Confirm if the worker was created successfully
             if (!result.Success)
                 return BadRequest(result.Message);
         
