@@ -129,6 +129,7 @@ public class BookingHistoryController : ControllerBase
         var bookingResources = _mapper.Map<IEnumerable<BookingHistory>, IEnumerable<BookingHistoryResource>>(bookings);
         return Ok(bookingResources);
     }
+    
     /// <summary>
     /// Creates a new booking.
     /// </summary>
