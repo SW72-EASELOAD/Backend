@@ -252,5 +252,4 @@ public class BookingHistoryController : ControllerBase
         var bookingResource = _mapper.Map<BookingHistory, BookingHistoryResource>(response.Resource);
         return Ok(bookingResource);
     }
-
 }
