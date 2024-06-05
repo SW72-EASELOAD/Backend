@@ -1,51 +1,82 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
 
-namespace CargaSinEstres.API.CargaSinEstres.Domain.Models
+namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
+
+/// <summary>
+/// Represents a booking history entity that stores information about the reservations made.
+/// </summary>
+///<remarks> Grupo 1: Carga sin estres </remarks>
+public class BookingHistory
 {
-    public class BookingHistory
-    {
-        // Unique identifier for the booking
-        public int Id { get; set; }
+    /// <summary>
+    /// Gets or sets the unique identifier for the booking history.
+    /// </summary>
+    public int Id { get; set; }
 
-        // Identifier for the company associated with the booking
-        public int IdCompany { get; set; }
+    /// <summary>
+    /// Gets or sets the identifier of the company associated with the booking.
+    /// </summary>
+    public int IdCompany { get; set;}
 
-        // Identifier for the client who made the booking
-        public int IdClient { get; set; }
+    /// <summary>
+    /// Gets or sets the identifier of the client associated with the booking.
+    /// </summary>
+    public int IdClient { get; set;}
 
-        // Date when the booking was made
-        public string BookingDate { get; set; }
+    /// <summary>
+    /// Gets or sets the date when the booking was made.
+    /// </summary>
+    public string BookingDate { get; set;}
 
-        // Weight of the items to be moved
-        public int Weight { get; set; }
+    /// <summary>
+    /// Gets or sets the weight. This property is required.
+    /// </summary>
+    public int Weight { get; set; }
+    
+    /// <summary>
+    /// Gets or sets the pickup address for the booking.
+    /// </summary>
+    public string PickupAddress { get; set;}
 
-        // Address where the items will be picked up
-        public string PickupAddress { get; set; }
+    /// <summary>
+    /// Gets or sets the destination address for the booking.
+    /// </summary>
+    public string DestinationAddress { get; set;}
 
-        // Address where the items will be delivered
-        public string DestinationAddress { get; set; }
+    /// <summary>
+    /// Gets or sets the date when the moving is scheduled.
+    /// </summary>
+    public string MovingDate {get; set;}
 
-        // Date when the items will be moved
-        public string MovingDate { get; set; }
+    /// <summary>
+    /// Gets or sets the time when the moving is scheduled.
+    /// </summary>
+    public string MovingTime {get; set;}
 
-        // Time when the items will be moved
-        public string MovingTime { get; set; }
+    ///<summary>
+    /// The services that are reserved for the booking.
+    ///</summary>
+    public string Services { get; set;}
+    
+    /// <summary>
+    /// Gets or sets the status of the booking (e.g., Finalized, Canceled).
+    /// </summary>
+    public string Status { get; set;}
 
-        // Services requested for the booking
-        public string Services { get; set; }
+     /// <summary>
+    /// Gets or sets the total payment amount for the booking.
+    /// </summary>   
+    public int Payment { get; set; }
 
-        // Current status of the booking
-        public string Status { get; set; }
+    /// <summary>
+    /// Gets or sets the collection of chat messages associated with the booking.
+    /// </summary>
+    public IEnumerable<Chat> Chats { get; set; } = new List<Chat>();
+ 
+    /// <summary>
+    /// Gets or sets the list of worker identifiers associated with the booking.
+    /// </summary>
+    [NotMapped]
+    public List<int> Workers { get; set; } = new List<int>();
 
-        // Payment amount for the booking
-        public int Payment { get; set; }
-
-        // Chats associated with the booking
-        public IEnumerable<Chat> Chats { get; set; } = new List<Chat>();
-
-        // Workers assigned to the booking (Not mapped to the database)
-        [NotMapped]
-        public List<int> Workers { get; set; } = new List<int>();
-    }
 }
