@@ -12,7 +12,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Controllers;
 /// <summary>
 /// Controller for managing booking history-related operations.
 /// </summary>
-/// <remarks> Grupo 1: Carga sin estres </remarks>
+/// <remarks> Grupo 3: Carga sin estres </remarks>
 [ApiController]
 [Route("/api/v1/booking-history")]
 public class BookingHistoryController : ControllerBase
@@ -253,5 +253,4 @@ public class BookingHistoryController : ControllerBase
         var bookingResource = _mapper.Map<BookingHistory, BookingHistoryResource>(response.Resource);
         return Ok(bookingResource);
     }
-
 }

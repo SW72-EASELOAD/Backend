@@ -3,7 +3,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
 /// <summary>
 /// Represents a review entity with properties such as identifier, rating, comment, and a foreign key relationship with a company.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class Review{
     /// <summary>
     /// Gets or sets the unique identifier for the review.

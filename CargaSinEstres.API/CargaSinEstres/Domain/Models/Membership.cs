@@ -2,7 +2,7 @@
 /// <summary>
 /// Represents a membership entity with properties such as identifier, company name, RUC, and a foreign key relationship with a company.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class Membership
 {
     /// <summary>

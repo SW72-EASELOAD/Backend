@@ -109,8 +109,7 @@ public class BookingHistoryService : IBookingHistoryService
                     booking.Workers.Add(worker.Id);
                 }
             }
-        }
-        
+        }        
         return bookings;
     }
 
@@ -187,5 +186,4 @@ public class BookingHistoryService : IBookingHistoryService
         }
 
     }*/
-
 }

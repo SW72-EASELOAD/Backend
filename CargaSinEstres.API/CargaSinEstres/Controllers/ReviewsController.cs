@@ -13,7 +13,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Controllers;
 /// <summary>
 /// Controller for reviews
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 [ApiController]
 [Route("/api/v1/[controller]")]
 public class ReviewsController : ControllerBase {

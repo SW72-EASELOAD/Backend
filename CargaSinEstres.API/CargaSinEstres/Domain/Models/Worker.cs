@@ -2,7 +2,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
 ///<summary>
 /// Represents a worker entity with properties such as identifier, first name, last name, company identifier,and a list of comments related to the worker.
 ///</summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class Worker
 {
     /// <summary>

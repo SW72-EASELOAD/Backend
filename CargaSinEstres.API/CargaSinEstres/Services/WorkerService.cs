@@ -70,8 +70,7 @@ public class WorkerService : IWorkerService
         }
 
         //return 
-    }
-    
+    }    
 
     /// <summary>
     /// Retrieves a worker by its identifier asynchronously.
@@ -105,7 +104,6 @@ public class WorkerService : IWorkerService
     public async Task<IEnumerable<Worker>> GetWorkersAsync()
     {
         return await _workerRepository.ListAsync();
-    }
-    
+    }    
 }
 

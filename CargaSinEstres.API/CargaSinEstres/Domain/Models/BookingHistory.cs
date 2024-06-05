@@ -5,7 +5,7 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
 /// <summary>
 /// Represents a booking history entity that stores information about the reservations made.
 /// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
+///<remarks> Grupo 3: Carga sin estres </remarks>
 public class BookingHistory
 {
     /// <summary>
