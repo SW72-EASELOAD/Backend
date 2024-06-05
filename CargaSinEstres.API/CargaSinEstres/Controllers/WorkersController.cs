@@ -102,8 +102,6 @@ namespace CargaSinEstres.API.CargaSinEstres.Controllers
             var workerResource = _mapper.Map<Worker, WorkerResource>(result.Resource); 
             return Ok(workerResource);
 
-        }
-
-        
+        }        
     }
 }
