@@ -1,49 +1,51 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
-namespace CargaSinEstres.API.CargaSinEstres.Domain.Models;
-
-
-public class BookingHistory
+namespace CargaSinEstres.API.CargaSinEstres.Domain.Models
 {
+    public class BookingHistory
+    {
+        // Unique identifier for the booking
+        public int Id { get; set; }
 
-    public int Id { get; set; }
+        // Identifier for the company associated with the booking
+        public int IdCompany { get; set; }
 
+        // Identifier for the client who made the booking
+        public int IdClient { get; set; }
 
-    public int IdCompany { get; set;}
+        // Date when the booking was made
+        public string BookingDate { get; set; }
 
+        // Weight of the items to be moved
+        public int Weight { get; set; }
 
-    public int IdClient { get; set;}
+        // Address where the items will be picked up
+        public string PickupAddress { get; set; }
 
-    public string BookingDate { get; set;}
+        // Address where the items will be delivered
+        public string DestinationAddress { get; set; }
 
+        // Date when the items will be moved
+        public string MovingDate { get; set; }
 
-    public int Weight { get; set; }
-    
+        // Time when the items will be moved
+        public string MovingTime { get; set; }
 
-    public string PickupAddress { get; set;}
+        // Services requested for the booking
+        public string Services { get; set; }
 
+        // Current status of the booking
+        public string Status { get; set; }
 
-    public string DestinationAddress { get; set;}
+        // Payment amount for the booking
+        public int Payment { get; set; }
 
+        // Chats associated with the booking
+        public IEnumerable<Chat> Chats { get; set; } = new List<Chat>();
 
-    public string MovingDate {get; set;}
-
-    public string MovingTime {get; set;}
-
-
-    public string Services { get; set;}
-    
-
-    public string Status { get; set;}
-
-
-    public int Payment { get; set; }
-
-
-    public IEnumerable<Chat> Chats { get; set; } = new List<Chat>();
- 
-
-    [NotMapped]
-    public List<int> Workers { get; set; } = new List<int>();
-
+        // Workers assigned to the booking (Not mapped to the database)
+        [NotMapped]
+        public List<int> Workers { get; set; } = new List<int>();
+    }
 }
