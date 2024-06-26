@@ -2,11 +2,11 @@ using AutoMapper;
 using CargaSinEstres.API.CargaSinEstres.Domain.Models;
 using CargaSinEstres.API.CargaSinEstres.Domain.Services;
 using CargaSinEstres.API.CargaSinEstres.Resources;
-using CargaSinEstres.API.Security.Authorization.Attributes;
 using CargaSinEstres.API.Security.Domain.Models;
 using CargaSinEstres.API.Security.Domain.Services;
 using CargaSinEstres.API.Security.Domain.Services.Communication;
 using CargaSinEstres.API.Security.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CargaSinEstres.API.Security.Controllers;
@@ -15,7 +15,7 @@ namespace CargaSinEstres.API.Security.Controllers;
 ///   Controller for companies
 /// </summary>
 /// <remarks> Grupo 1: Carga sin estres </remarks>
-[Authorize]
+[Authorization.Attributes.Authorize]
 [ApiController]
 [Route("/api/v1/[controller]")]
 public class CompaniesController : ControllerBase

@@ -1,12 +1,15 @@
-namespace CargaSinEstres.API.Security.Authorization.Attributes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 
-[AttributeUsage(AttributeTargets.Method)]
-
-/// <summary>
-/// Specifies that the action or controller allows anonymous access.
-/// </summary>
-///<remarks> Grupo 1: Carga sin estres </remarks>
-public class AllowAnonymousAttribute : Attribute
+public class CustomAuthorizeAttribute : Attribute, IAuthorizationFilter
 {
-    
+    public void OnAuthorization(AuthorizationFilterContext context)
+    {
+        // Your custom authorization logic here
+        // Example: Check if the user has a specific claim
+        if (!context.HttpContext.User.HasClaim("YourClaimType", "YourClaimValue"))
+        {
+            context.Result = new UnauthorizedResult();
+        }
+    }
 }
